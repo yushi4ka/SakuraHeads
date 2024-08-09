@@ -1,0 +1,14 @@
+# By yushi4ka
+# v1.1.0
+
+# Download: PlaceholderAPI and LuckPerms
+# For PlaceholderAPI: /papi ecloud download LuckPerms
+# Colors: § and &
+# Plugin Placeholders: %name% and %killer%
+
+Messages:
+  tag: "&f[&#E43A96S&#E5489Da&#E756A4k&#E864ACu&#EA72B3r&#EB80BAa&#EC8EC1H&#EE9CC8e&#EFAAD0a&#F1B8D7d&#F2C6DEs&f] "
+  no-permission: "§c§l× §cУвас не достаточно прав!"
+  cmd-reload-message: "§a§l✅ §aПлагин был перезагружен!"
+  death-message: "§c§l💀 §r%name% §cВы умерли и потеряли голову."
+  killer-message: "§cУбийца: §f%killer%"
