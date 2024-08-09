@@ -34,7 +34,7 @@ public class SHeads implements CommandExecutor, TabCompleter {
                     SakuraHeads.getPlugin().reloadConfig();
                     config = SakuraHeads.getPlugin().getConfig();
                     String reloadMessage = config.getString("Messages.cmd-reload-message");
-                    player.sendMessage(reloadMessage);
+                    player.sendMessage(ColorUtil.color(tag + reloadMessage));
                 } else {
                     String nopermissionMessage = config.getString("Messages.cmd-no-permission");
                     player.sendMessage(ColorUtil.color(tag + nopermissionMessage));
@@ -58,7 +58,7 @@ public class SHeads implements CommandExecutor, TabCompleter {
                     String deathMessage = config.getString("Messages.death-message");
                     deathMessage = deathMessage.replace("%name%", player.getName());
 
-                    player.sendMessage(deathMessage);
+                    player.sendMessage(ColorUtil.color(tag + deathMessage));
                 } else {
                     String nopermissionMessage = config.getString("Messages.cmd-no-permission");
                     player.sendMessage(ColorUtil.color(tag + nopermissionMessage));
