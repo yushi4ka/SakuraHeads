@@ -1,0 +1,13 @@
+name: SakuraHeads
+version: ${project.version}
+main: org.winterdev.SakuraHeads.SakuraHeads
+api-version: '1.21'
+authors: [ yushi4ka ]
+description: Minecraft plugin
+depend:
+  - LuckPerms
+  - PlaceholderAPI
+commands:
+  sheads:
+    description: Plugin commands
+    permission: sakuraheads.admin
