@@ -13,12 +13,14 @@ import java.util.Collections;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.winterdev.SakuraHeads.SakuraHeads;
+import org.winterdev.SakuraHeads.Util.ColorUtil;
 
 public class HeadsOnDeath implements Listener {
 
     @EventHandler
     private void onDeath(PlayerDeathEvent e) {
         FileConfiguration config = SakuraHeads.getPlugin().getConfig();
+        String tag = config.getString("Messages.tag");
         Player player = e.getPlayer();
 
         if (e.getPlayer().getKiller() == null) return;
@@ -39,6 +41,6 @@ public class HeadsOnDeath implements Listener {
         String deathMessage = config.getString("Messages.death-message");
         deathMessage = deathMessage.replace("%name%", player.getName());
 
-        player.sendMessage(deathMessage);
+        player.sendMessage(ColorUtil.color(tag + deathMessage));
     }
 }
